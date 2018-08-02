@@ -2,6 +2,7 @@ class SongsController < ApplicationController
 
 
   def new
+    @song = Song.new 
   end
 
   def show
@@ -16,5 +17,5 @@ class SongsController < ApplicationController
 
   def update
   end
-  
+
 end
