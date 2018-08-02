@@ -1,10 +1,12 @@
 class ArtistsController < ApplicationController
 
-    def new
-    end
+  def new
+    @genre= Genre.new
+  end
 
-    def show
-    end
+  def show
+    @genre= Genre.find(params[:id])
+  end
 
     def create
     end
