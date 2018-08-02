@@ -10,7 +10,7 @@ class GenresController < ApplicationController
 
     def create
       @genre = Genre.new(params.require(:genre))
-      @genre.save 
+      @genre.save
       redirect_to genre_path(@genre)
     end
 
