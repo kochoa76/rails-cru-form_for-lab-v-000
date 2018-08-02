@@ -16,8 +16,11 @@ class ArtistsController < ApplicationController
     end
 
     def edit
+      @artist = Artist.find(params[:id])
     end
 
     def update
+      @artist = Artist.find(params[:id])
+      @artist.update(params.require(:artist).permit(:name, :bio))
     end
 end
